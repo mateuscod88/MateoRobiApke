@@ -1,8 +1,9 @@
 ﻿<Window x:Class="DSPWarsztat.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Background="Azure"
+        Title="DSPWarsztat" Height="350" Width="525">
     <Grid>
-        
+        <Label VerticalAlignment="Center" HorizontalAlignment="Center">Daj Sie Poznac 2016</Label>
     </Grid>
 </Window>
