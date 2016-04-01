@@ -1,2 +1,18 @@
 c:\users\home\documents\visual studio 2013\Projects\DSPWarsztat\DSPWarsztat\bin\Debug\DSPWarsztat.exe.config
 C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\bin\Debug\DSPWarsztat.exe.config
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\bin\Debug\DSPWarsztat.exe
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\bin\Debug\DSPWarsztat.pdb
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\MainWindow.baml
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\View\LogView.baml
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\MainWindow.g.cs
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\App.g.cs
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\DSPWarsztat_MarkupCompile.cache
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\DSPWarsztat.g.resources
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\DSPWarsztat.Properties.Resources.resources
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\DSPWarsztat.csproj.GenerateResource.Cache
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\DSPWarsztat.exe
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\DSPWarsztat.pdb
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\DSPWarsztat_MarkupCompile.lref
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\App.baml
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\View\AllCarsView.baml
