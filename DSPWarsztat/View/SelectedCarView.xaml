@@ -1,0 +1,63 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:DSPWarsztat.ViewModel"
+                    xmlns:local1="clr-namespace:DSPWarsztat.Model"
+                    >
+    
+    <DataTemplate DataType ="{x:Type local:SelectedCarViewModel}">
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <GroupBox Header="Car">
+                    <ContentControl Content="{Binding currentCarModel}"></ContentControl>
+                </GroupBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <ListBox ItemsSource="{Binding Notes}" HorizontalAlignment="Right">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <ContentControl Content="{Binding}"></ContentControl>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </StackPanel>
+    </DataTemplate>
+    
+    <DataTemplate DataType="{x:Type local1:SelectedCarModel}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="">
+                <TextBlock Text="Marka:"/>
+                <TextBlock Text="Model:"/>
+                <TextBlock Text="Rok Produkcji:"/>
+                <TextBlock Text="Silnik"/>
+                <TextBlock Text="Stan Licznika:"/>
+                <TextBlock Text="Badanie Techniczne"/>
+                <TextBlock Text="Telefon:"/>
+                <TextBlock Text="Numer Rejestracyjny"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Vertical">
+                <TextBox Text="{Binding Brand}"/>
+                <TextBox Text="{Binding Model}"/>
+                <TextBox Text="{Binding Year}"/>
+                <TextBox Text="{Binding Engine}"/>
+                <TextBox Text="{Binding Mileage}"/>
+                <TextBox Text="{Binding DateVechicleCheckUp}"/>
+                <TextBox Text="{Binding PhoneNumber}"/>
+                <TextBox Text="{Binding RegNumber}"/>
+            </StackPanel>
+
+        </Grid>
+    </DataTemplate>
+    
+    <DataTemplate DataType="{x:Type local1:NotesModel}">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding NoteName}"></TextBlock>
+            <TextBlock Text="{Binding CreateTime}"></TextBlock>
+        </StackPanel>
+    </DataTemplate>
+    
+</ResourceDictionary>
