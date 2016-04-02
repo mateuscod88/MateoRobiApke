@@ -16,3 +16,4 @@ C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\GeneratedInternalTy
 C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\DSPWarsztat_MarkupCompile.lref
 C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\App.baml
 C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\View\AllCarsView.baml
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\View\SelectedCarView.baml

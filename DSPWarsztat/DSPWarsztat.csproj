@@ -57,8 +57,11 @@
     <Compile Include="HelpClass\RelayCommand.cs" />
     <Compile Include="Model\CarModel.cs" />
     <Compile Include="Model\LogModel.cs" />
+    <Compile Include="Model\NotesModel.cs" />
+    <Compile Include="Model\SelectedCarModel.cs" />
     <Compile Include="ViewModel\AllCarsViewModel.cs" />
     <Compile Include="ViewModel\LogViewModel.cs" />
+    <Compile Include="ViewModel\SelectedCarViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -76,6 +79,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\LogView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SelectedCarView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
