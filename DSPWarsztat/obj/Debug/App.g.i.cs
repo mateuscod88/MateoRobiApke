@@ -39,6 +39,27 @@ namespace DSPWarsztat {
     /// </summary>
     public partial class App : System.Windows.Application {
         
+        private bool _contentLoaded;
+        
+        /// <summary>
+        /// InitializeComponent
+        /// </summary>
+        [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
+        public void InitializeComponent() {
+            if (_contentLoaded) {
+                return;
+            }
+            _contentLoaded = true;
+            System.Uri resourceLocater = new System.Uri("/DSPWarsztat;component/app.xaml", System.UriKind.Relative);
+            
+            #line 1 "..\..\App.xaml"
+            System.Windows.Application.LoadComponent(this, resourceLocater);
+            
+            #line default
+            #line hidden
+        }
+        
         /// <summary>
         /// Application Entry Point.
         /// </summary>
@@ -47,6 +68,7 @@ namespace DSPWarsztat {
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
         public static void Main() {
             DSPWarsztat.App app = new DSPWarsztat.App();
+            app.InitializeComponent();
             app.Run();
         }
     }

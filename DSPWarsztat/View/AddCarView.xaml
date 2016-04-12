@@ -38,7 +38,7 @@
             <ContentControl Content="{Binding NewCar}"></ContentControl>
             <StackPanel Orientation="Horizontal">
                 <Button Content="Cofnij"></Button>
-                <Button Content="Dodaj"></Button>
+                <Button Content="Dodaj" Command="{Binding SaveCar}"></Button>
                 
             </StackPanel>
         </StackPanel>

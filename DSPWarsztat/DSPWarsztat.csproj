@@ -53,6 +53,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="HelpClass\Car.cs" />
+    <Compile Include="HelpClass\DemoDatabase.cs" />
     <Compile Include="HelpClass\Notify.cs" />
     <Compile Include="HelpClass\RelayCommand.cs" />
     <Compile Include="Model\CarModel.cs" />

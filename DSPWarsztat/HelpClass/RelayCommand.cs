@@ -7,19 +7,19 @@ using System.Windows.Input;
 
 namespace DSPWarsztat.HelpClass
 {
-    class RelayCommand : ICommand
+    public class RelayCommand : ICommand
     {
         readonly Action<object> _execute;
         readonly Predicate<object> _canExecute;
 
         #region Constructor
-        RelayCommand(Action<object> execute)
+        public RelayCommand(Action<object> execute)
             :this(execute,null)
         {
 
         }
 
-        RelayCommand(Action<object> execute, Predicate<object> canExecute)
+        public RelayCommand(Action<object> execute, Predicate<object> canExecute)
         {
             if (execute == null)
                 throw new ArgumentNullException("Execute");
