@@ -17,3 +17,6 @@ C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\DSPWarsztat_MarkupC
 C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\App.baml
 C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\View\AllCarsView.baml
 C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\View\SelectedCarView.baml
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\View\AddRepairView.baml
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\View\AddCarView.baml
+C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\obj\Debug\View\SelectedRepairView.baml

@@ -6,7 +6,10 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <!--<ResourceDictionary Source="/View/LogView.xaml"/>-->
-                <ResourceDictionary Source="/View/AllCarsView.xaml"/>
+                <!--<ResourceDictionary Source="/View/AllCarsView.xaml"/>-->
+                <!--<ResourceDictionary Source="/View/SelectedRepairView.xaml"/>-->
+                <!--<ResourceDictionary Source="/View/SelectedCarView.xaml"></ResourceDictionary>-->
+                <!--<ResourceDictionary Source="/View/AddCarView.xaml"/>-->
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
         

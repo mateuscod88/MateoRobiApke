@@ -18,11 +18,15 @@ namespace DSPWarsztat
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            ObservableCollection<CarModel> carsy = new ObservableCollection<CarModel>();
-            carsy.Add(new CarModel("Audi", "A4", "2004", "BIA8406"));
-            carsy.Add(new CarModel("VW", "Passat", "2000", "BIA00568"));
+            //ObservableCollection<CarModel> carsy = new ObservableCollection<CarModel>();
+            //carsy.Add(new CarModel("Audi", "A4", "2004", "BIA8406"));
+            //carsy.Add(new CarModel("VW", "Passat", "2000", "BIA00568"));
             MainWindow mw = new MainWindow();
-            AllCarsViewModel lvm = new AllCarsViewModel(carsy);
+            //ObservableCollection<NotesModel> napraw = new ObservableCollection<NotesModel>();
+            //napraw.Add(new NotesModel("Rozrzad", "2.03.2016"));
+            //napraw.Add(new NotesModel("Wymiana Filtrow", "2.03.2015"));
+            //napraw.Add(new NotesModel("Wymiana Wahacza","2.04.2015"));
+            AddCarsViewModel  lvm = new AddCarsViewModel();
             mw.DataContext = lvm;
             mw.Show();
         }

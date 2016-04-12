@@ -1,0 +1,47 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:DSPWarsztat.Model"
+                    xmlns:local1="clr-namespace:DSPWarsztat.ViewModel">
+    <Style x:Key="TextBoxy">
+        <Setter Property="TextBlock.Width" Value="100"></Setter>
+    </Style>
+    <Style x:Key="TextBlocki">
+        <Setter Property="TextBlock.Margin" Value="0,0,0,5"></Setter>
+    </Style>
+    <DataTemplate DataType="{x:Type local:SelectedCarModel}">
+        <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Vertical" >
+                <TextBlock Text="Marka:" Style="{StaticResource TextBlocki}"/>
+                <TextBlock Text="Model:" Style="{StaticResource TextBlocki}"/>
+                <TextBlock Text="Rok Produkcji:" Style="{StaticResource TextBlocki}"/>
+                <TextBlock Text="Silnik" Style="{StaticResource TextBlocki}"/>
+                <TextBlock Text="Stan Licznika:" Style="{StaticResource TextBlocki}"/>
+                <TextBlock Text="Badanie Techniczne" Style="{StaticResource TextBlocki}"/>
+                <TextBlock Text="Telefon:" Style="{StaticResource TextBlocki}"/>
+                <TextBlock Text="Numer Rejestracyjny" Style="{StaticResource TextBlocki}"/>
+        </StackPanel>
+        <StackPanel  Orientation="Vertical" Style="{StaticResource TextBoxy}">
+            <TextBox Text="{Binding Brand}"/>
+            <TextBox Text="{Binding Model}"/>
+            <TextBox Text="{Binding Year}"/>
+            <TextBox Text="{Binding Engine}"/>
+            <TextBox Text="{Binding Mileage}"/>
+            <TextBox Text="{Binding DateVechicleCheckUp}"/>
+            <TextBox Text="{Binding PhoneNumber}"/>
+            <TextBox Text="{Binding RegNumber}"/>
+        </StackPanel>
+        </StackPanel>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type local1:AddCarsViewModel}">
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="Dodawanie Samochodu" TextAlignment="Center" Margin="10,10,10,10" FontSize="20"></TextBlock>
+            <ContentControl Content="{Binding NewCar}"></ContentControl>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Cofnij"></Button>
+                <Button Content="Dodaj"></Button>
+                
+            </StackPanel>
+        </StackPanel>
+    </DataTemplate>
+    
+</ResourceDictionary>

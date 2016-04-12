@@ -10,5 +10,11 @@ namespace DSPWarsztat.Model
     {
         public String NoteName { get; set; }
         public String CreateTime { get; set; }
+
+        public NotesModel(string name, string createTime)
+        {
+            NoteName = name;
+            CreateTime = createTime;
+        }
     }
 }

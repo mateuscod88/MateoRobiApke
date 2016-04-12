@@ -3,7 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Background="Azure"
         Title="DSPWarsztat" Height="350" Width="525">
-    <Grid>
-        <ContentControl Content="{Binding }" HorizontalAlignment="Center" Margin="10" ></ContentControl>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <ContentControl Content="{Binding }" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="10" Grid.Row="0" Grid.Column="0" ></ContentControl>
     </Grid>
 </Window>

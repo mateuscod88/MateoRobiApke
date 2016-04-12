@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Home\Desktop\Blog\DSPWarsztat\DSPWarsztat\App.xaml
-4-667850320
+7-1041577418
 
-18-371718097
+21-952979210
 12-1401562060
-MainWindow.xaml;View\AllCarsView.xaml;View\LogView.xaml;View\SelectedCarView.xaml;
+MainWindow.xaml;View\AddCarView.xaml;View\AddRepairView.xaml;View\AllCarsView.xaml;View\LogView.xaml;View\SelectedCarView.xaml;View\SelectedRepairView.xaml;
 
-True
+False
 

@@ -17,6 +17,28 @@ namespace DSPWarsztat.Model
         private string _phoneNumber;
         private string _engine;
 
+        public SelectedCarModel()
+        {
+            _brand ="";
+            _model = "";
+            _year = "";
+            _regNumber = "";
+            _mileage = "";
+            _dateVechicleCheckUp = "";
+            _phoneNumber = "";
+            _engine = "";
+        }
+        public SelectedCarModel(string brand,string model,string year,string regnum,string mileage,string dataVChecUp,string phoneNum,string engine)
+        {
+            _brand = brand;
+            _model = model;
+            _year = year;
+            _regNumber = regnum;
+            _mileage = mileage;
+            _dateVechicleCheckUp = dataVChecUp;
+            _phoneNumber = phoneNum;
+            _engine = engine;
+        }
         public string Brand
         {
             get { return _brand; }
