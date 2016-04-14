@@ -63,6 +63,7 @@
     <Compile Include="Model\RepairModel.cs" />
     <Compile Include="Model\SelectedCarModel.cs" />
     <Compile Include="ViewModel\AddCarsViewModel.cs" />
+    <Compile Include="ViewModel\AddRepairViewModel.cs" />
     <Compile Include="ViewModel\AllCarsViewModel.cs" />
     <Compile Include="ViewModel\LogViewModel.cs" />
     <Compile Include="ViewModel\SelectedCarViewModel.cs" />
