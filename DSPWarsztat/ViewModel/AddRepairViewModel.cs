@@ -8,6 +8,30 @@ namespace DSPWarsztat.ViewModel
 {
     class AddRepairViewModel
     {
+	private ICommand addRepairCmd;
+	private ICommand backToPreviousViewCmd;
+	public ICommand AddRepairCmd
+	{
+		get
+		{
+			if(addRepairCmd == null)
+			{
+			  addRepairCmd = new RelayCommand(param => addRepair(),param => canAddRepair());
+			}
+		  return addRepairCmd;
+		}	
+	}
+	public ICommand BackToPreviousViewCmd
+	{
+		get
+		{
+			if(backToPreviousViewCmd == null)
+			{
+				backToPreviousViewCmd = new RelayCommand(param => backToPreviousView(),param => canBackToPreviousView());
+			}
+		  return backToPreviousView;
+		}
+	}
         public RepairModel repairModel { get; set; }
 
     }
