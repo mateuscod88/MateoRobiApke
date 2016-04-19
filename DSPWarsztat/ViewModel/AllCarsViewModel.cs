@@ -21,7 +21,7 @@ namespace DSPWarsztat.ViewModel
 		{
 			if(addNewCarCmd == null)
 			{
-			   addNewCarCmd = new RelayCommand(param => addNewCar(),			   canAddNewCar());
+			   addNewCarCmd = new RelayCommand(param => addNewCar(),param => canAddNewCar());
 			}
 		 return addNewCarCmd;
 		}
@@ -50,6 +50,31 @@ namespace DSPWarsztat.ViewModel
 		  return showCarCmd;
 		}
 	}
+	private void addNewCar()
+	{
+		
+	}
+	private bool canAddNewCar()
+	{
+	
+	}
+	private void deleteCar()
+	{
+	
+	}
+	private bool canDeleteCar()
+	{
+	 
+	}
+	private void showCar()
+	{
+	
+	}
+	private bool canShowCar()
+	{
+	
+	}
+
 	public ICollectionView Customers { get; private set; }
         
         public AllCarsViewModel(ObservableCollection<CarModel> cars)

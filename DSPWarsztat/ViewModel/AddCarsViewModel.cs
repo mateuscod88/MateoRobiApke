@@ -11,25 +11,36 @@ namespace DSPWarsztat.ViewModel
     public class AddCarsViewModel : Notify
     {
         public SelectedCarModel NewCar { get; set; }
-        private ICommand saveCar;
-        private ICommand backToPreviousView;
+        private ICommand saveCarCmd;
+        private ICommand backToPreviousViewCmd;
         
         public AddCarsViewModel() 
         {
             NewCar = new SelectedCarModel();
         }
 
-        public ICommand SaveCar
+        public ICommand SaveCarCmd
         {
             get
             {
-                if(saveCar == null)
+                if(saveCarCmd == null)
                 {
-                    saveCar = new RelayCommand(param => save(),param => canSave());
+                    saveCarCmd = new RelayCommand(param => save(),param => canSave());
                 }
-            return saveCar;
+            return saveCarCmd;
             }
         }
+	public ICommand BackToPreviousViewCmd
+	{
+		get
+		{
+	   		if(backToPreviousViewCmd == null)
+			{
+				backToPreviousViewCmd = new RelayCommand(param => back(),param => canBack());
+			}
+		return backToPreviousViewCmd;
+		}
+	}
         private void save()
         {
             Car currentCar = new Car(NewCar.Brand,NewCar.Model,NewCar.Year,NewCar.RegNumber,NewCar.Mileage,NewCar.DateVechicleCheckUp,NewCar.PhoneNumber,NewCar.Engine);
@@ -40,5 +51,13 @@ namespace DSPWarsztat.ViewModel
         {
             return NewCar.Model != "";
         }
+	private void back()
+	{
+	}
+	private bool canBack()
+	{
+	}	
+	
+
     }
 }

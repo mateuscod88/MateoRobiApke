@@ -41,7 +41,7 @@ namespace DSPWarsztat.ViewModel
 	{
 		
 	}
-    private void backToPreviousView()
+    	private void backToPreviousView()
 	{
 		
 	}
