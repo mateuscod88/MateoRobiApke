@@ -33,7 +33,7 @@ namespace DSPWarsztat.ViewModel
 			if(deleteCarCmd == null)
 			{
 			  deleteCarCmd = new RelayCommand(param => deleteCar(),
-			  canDeleteCar());
+			  param => canDeleteCar());
 			}
 		  return deleteCarCmd;
 		}
