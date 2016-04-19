@@ -37,8 +37,8 @@
             <TextBlock Text="Dodawanie Samochodu" TextAlignment="Center" Margin="10,10,10,10" FontSize="20"></TextBlock>
             <ContentControl Content="{Binding NewCar}"></ContentControl>
             <StackPanel Orientation="Horizontal">
-                <Button Content="Cofnij"></Button>
-                <Button Content="Dodaj" Command="{Binding SaveCar}"></Button>
+                <Button Content="Cofnij" Command="{Binding BackToPreviousViewCmd}"></Button>
+                <Button Content="Dodaj" Command="{Binding SaveCarCmd}"></Button>
                 
             </StackPanel>
         </StackPanel>

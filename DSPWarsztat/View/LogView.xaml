@@ -24,10 +24,11 @@
         </DataTemplate>
         <DataTemplate DataType="{x:Type local1:LogViewModel}">
 
-            <StackPanel>
+            <StackPanel >
                 <TextBlock Text="ViewModel"></TextBlock>
             <ContentControl  Margin="10"  Content="{Binding Path=Modell}"/>
-            </StackPanel>
+ 	    <Button Content="Zaloguj" Command="{Binding Log}"/>       
+	    </StackPanel>
         </DataTemplate>
 
 

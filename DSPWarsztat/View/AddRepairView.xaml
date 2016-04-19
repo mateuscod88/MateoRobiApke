@@ -34,7 +34,8 @@
                     <TextBlock Text="" ></TextBlock>
                 </GroupBox>
                 <StackPanel Orientation="Horizontal">
-                    <Button Content="Cofnij" Margin="10,10,10,10"></Button>
+                    <Button Content="Cofnij" Margin="10,10,10,10" Command="{Binding BackToPreviousViewCmd}"></Button>
+		    <Button Content="Dodaj" Margin="10,10,10,10" Command="{Binding AddRepairCmd}"></Button>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

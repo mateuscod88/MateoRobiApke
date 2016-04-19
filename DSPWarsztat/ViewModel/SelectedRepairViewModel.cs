@@ -11,31 +11,32 @@ namespace DSPWarsztat.ViewModel
     {
         private RepairModel _repair;
         private ICommand editRepairCmd;
-		private ICommand backToPreviousViewCmd;
-		public ICommand EditRepairCmd
+	private ICommand backToPreviousViewCmd;
+	public ICommand EditRepairCmd
+	{
+		get
 		{
-			get
+			if(editRepairCmd == null)
 			{
-				if(editRepairCmd == null)
-				{
-					editRepairCmd = new RelayCommand(param => editRepair(),param => canEdit());
-				}
-				return editRepairCmd;
+				editRepairCmd = new RelayCommand(param => editRepair(),param => canEdit());
 			}
+			return editRepairCmd;
 		}
-		public ICommand BackToPreviousViewCmd
+	}
+	public ICommand BackToPreviousViewCmd
+	{
+		get
 		{
-			get
+			if(backToPreviousViewCmd == null)
 			{
-				if(backToPreviousViewCmd == null)
-				{
-						backToPreviousViewCmd = new RelayCommand(param => back(),param => canBack());
-				}
-				 return backToPreviousViewCmd;
+					backToPreviousViewCmd = new RelayCommand(param => back(),param => canBack());
 			}
+			 return backToPreviousViewCmd;
 		}
-		public string RepName{get;set;}
-        public RepairModel Repair
+	}
+	public string RepName{get;set;}
+        
+	public RepairModel Repair
         { 
             get { return _repair; }
             set {
@@ -49,21 +50,21 @@ namespace DSPWarsztat.ViewModel
             RepName = "Rozrzad";
         }
 		
-		private void editRepair()
-		{
+	private void editRepair()
+	{
 			
-		}
-		private bool canEdit()
-		{
+	}
+	private bool canEdit()
+	{
 			
-		}
+	}
         private void back()
-		{
+	{
 			
-		}
-		private bool canBack()
-		{
+	}
+	private bool canBack()
+	{
 			
-		}
+	}
     }
 }

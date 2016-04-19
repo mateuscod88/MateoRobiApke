@@ -35,11 +35,11 @@
                 </ListBox.ItemTemplate>
             </ListBox>
             <StackPanel Orientation="Vertical" Margin="0,20,0,0">
-                <Button Content="Dodaj" Width="100" Height="50" Margin="0,0,0,20"></Button>
-                <Button Content="Usun" Width="100" Height="50" Margin="0,0,0,20"></Button>
+                <Button Content="Dodaj" Width="100" Height="50" Margin="0,0,0,20" Command="{Binding AddNewCarCmd}"></Button>
+                <Button Content="Usun" Width="100" Height="50" Margin="0,0,0,20" Command="{Binding DeleteNewCarCmd}"></Button>
                 <StackPanel Orientation="Horizontal" Margin="20,0,0,20">
                     <Button Content="COFNIJ" Width="100" Height="50" Margin="0,0,20,0"></Button>
-                    <Button Content="PRZOD" Width="100" Height="50" ></Button>
+                    <Button Content="PRZOD" Width="100" Height="50" Command="{Binding ShowCarCmd}"></Button>
                 </StackPanel>
             </StackPanel>
         </StackPanel>
