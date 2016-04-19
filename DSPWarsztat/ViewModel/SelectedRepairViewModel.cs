@@ -10,7 +10,31 @@ namespace DSPWarsztat.ViewModel
     class SelectedRepairViewModel : Notify
     {
         private RepairModel _repair;
-        public string RepName{get;set;}
+        private ICommand editRepairCmd;
+		private ICommand backToPreviousViewCmd;
+		public ICommand EditRepairCmd
+		{
+			get
+			{
+				if(editRepairCmd == null)
+				{
+					editRepairCmd = new RelayCommand(param => editRepair(),param => canEdit());
+				}
+				return editRepairCmd;
+			}
+		}
+		public ICommand BackToPreviousViewCmd
+		{
+			get
+			{
+				if(backToPreviousViewCmd == null)
+				{
+						backToPreviousViewCmd = new RelayCommand(param => back(),param => canBack());
+				}
+				 return backToPreviousViewCmd;
+			}
+		}
+		public string RepName{get;set;}
         public RepairModel Repair
         { 
             get { return _repair; }
@@ -24,6 +48,22 @@ namespace DSPWarsztat.ViewModel
             Repair = new RepairModel();
             RepName = "Rozrzad";
         }
-        
+		
+		private void editRepair()
+		{
+			
+		}
+		private bool canEdit()
+		{
+			
+		}
+        private void back()
+		{
+			
+		}
+		private bool canBack()
+		{
+			
+		}
     }
 }
