@@ -12,9 +12,9 @@ namespace DSPWarsztat.ViewModel
     public class SelectedCarViewModel : ObservableCollection<NotesModel>
     {
         private ICommand addRepair;
-	public SelectedCarModel currentCarModel { get; set; }
+		public SelectedCarModel currentCarModel { get; set; }
         public NotesModel Naprawa { get; set; }
-   	 public CollectionView Notes { get; private set; }   
+		public CollectionView Notes { get; private set; }   
         
 
 	 public ICommand AddRepair
@@ -23,8 +23,9 @@ namespace DSPWarsztat.ViewModel
 		{
 		 if(addRepair == null)
 		 {
-			addRepair = new RelayCommand(param => addingRepair(), pa			ram => canAddRepair());
+			addRepair = new RelayCommand(param => addingRepair(), param => canAddRepair());
 		 }
+		 return addRepair;
 		}
 	}
         public SelectedCarViewModel(ObservableCollection<NotesModel> naprawy)       

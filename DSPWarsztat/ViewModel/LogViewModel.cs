@@ -10,6 +10,19 @@ namespace DSPWarsztat.ViewModel
     class LogViewModel : Notify
     {
         private LogModel _model = new LogModel();
+		private ICommand log;
+		public ICommand Log
+		{
+			get
+			{
+				if(log == null)
+				{
+					log = new RelayCommand(param => logM(), param => canLog());
+				}
+				return log;
+			}
+			
+		}
         public LogModel Modell
         {
             get { return _model; }
@@ -20,6 +33,15 @@ namespace DSPWarsztat.ViewModel
                 OnPropertyChanged("Modell");
             }
         }
+		
+		void logM()
+		{
+			//Logowanie
+		}
+		bool canLog()
+		{
+			//CanLog
+		}
        
     }
 }
