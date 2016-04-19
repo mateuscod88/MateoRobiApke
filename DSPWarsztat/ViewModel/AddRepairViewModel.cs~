@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using DSPWarsztat.Model;
+namespace DSPWarsztat.ViewModel
+{
+    class AddRepairViewModel
+    {
+	private ICommand addRepairCmd;
+	private ICommand backToPreviousView;
+	public ICommand AddRepairCmd
+	{
+		
+	}
+        public RepairModel repairModel { get; set; }
+
+    }
+}
